@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Барев Kids"><meta name="theme-color" content="#5521a0"><link rel="apple-touch-icon" href="apple-touch-icon.png"><title>Барев Kids — новые иллюстрации</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#74305e;font-family:ui-rounded,'Arial Rounded MT Bold',system-ui,sans-serif;background:#4c1689}button{font:inherit;cursor:pointer;touch-action:manipulation}button:disabled{opacity:.55}#app{max-width:530px;min-height:100dvh;margin:auto;position:relative;overflow:hidden;padding:14px 14px 110px;background:radial-gradient(circle at 12% 16%,#e5b5ff88 0,transparent 30%),radial-gradient(circle at 86% 45%,#f59bb766 0,transparent 33%),linear-gradient(180deg,#4a158c 0%,#7a36c3 45%,#b970dd 74%,#efb1e5 100%)}#app:before{content:'✨       ⭐        ✨';position:absolute;top:116px;left:0;right:0;text-align:center;opacity:.4;pointer-events:none;font-size:36px}.top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2;margin-bottom:15px}.logo{font-size:28px;color:#d52c49;font-weight:1000;text-shadow:2px 3px #fff,-2px -2px #fff,0 5px #ffdc54;letter-spacing:-1px}.logo b{color:#2386d9}.counter{padding:9px 15px;background:#fff8d6;border:4px solid #fff;box-shadow:0 5px #dc992b;border-radius:40px;color:#a86c22;font-weight:900}.panel{position:relative;background:linear-gradient(145deg,#fffef4,#fff2be);border:6px solid white;border-radius:32px;box-shadow:0 9px #eab65e,0 16px 16px #5e3a6a25;padding:17px;margin-bottom:22px}.panel.blue{background:linear-gradient(140deg,#dffaff,#b2e5ff);box-shadow:0 8px #73b4d3}.panel.pink{background:linear-gradient(125deg,#fff2fa,#fdd4e7)}.panel.purple{background:linear-gradient(130deg,#f7d6ff,#c4a1f6);box-shadow:0 9px #9661ba}.heading{text-align:center;font-size:23px;font-weight:1000;margin:4px 0 12px}.small{font-size:13px;color:#855c7d}.center{text-align:center}.hero-art{width:100%;height:180px;object-fit:cover;object-position:center 30%;border-radius:21px;border:4px solid white;box-shadow:0 5px 11px #537b9833}.hero-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero-option{background:#fff;border:5px solid #fff;border-radius:25px;overflow:hidden;padding:0 0 12px;box-shadow:0 7px #d59cba;width:100%}.hero-option img{width:100%;height:220px;object-fit:cover;object-position:center 28%}.hero-option.selected{border-color:#ffd149}.namebar{background:#238de8;color:#fff;padding:8px;border-radius:22px;margin:7px 7px 0;font-weight:1000}.hero-option:nth-child(2) .namebar{background:#e53b83}.bigbtn{display:block;width:100%;border:5px solid white;border-radius:30px;padding:15px 12px;margin:12px 0;background:linear-gradient(#ffe968,#ffb52e);color:#8a3061;font-size:20px;font-weight:1000;text-shadow:0 1px #fff9;box-shadow:0 8px #d78d18,0 14px 13px #9a6e2640}.bigbtn.green{background:linear-gradient(#b8ff66,#36cc16);color:white;text-shadow:0 2px #25842b;box-shadow:0 8px #299b1b}.bigbtn.blue{background:linear-gradient(#8de8ff,#198ee8);color:white;text-shadow:0 2px #1570ab;box-shadow:0 8px #2573af}.bigbtn.pink{background:linear-gradient(#ffc4dd,#f3428b);color:white;text-shadow:0 2px #a52669;box-shadow:0 8px #af417b}.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.tile{min-width:0;border:5px solid white;border-radius:27px;padding:18px 7px;background:linear-gradient(145deg,#ffd4ed,#fa5c9b);box-shadow:0 8px #b55689;color:white;text-shadow:0 2px #a52b65;font-size:19px;font-weight:900}.tile:nth-child(4n+2){background:linear-gradient(#b3edff,#2694f0);box-shadow:0 8px #287bb1}.tile:nth-child(4n+3){background:linear-gradient(#d6ff93,#6ccb35);box-shadow:0 8px #70a12f}.tile:nth-child(4n){background:linear-gradient(#d9c4ff,#9763d4);box-shadow:0 8px #8655b1}.tile .tileico{font-size:43px;display:block;margin:0 0 9px}.guide{display:flex;align-items:center;gap:12px}.guide img{width:90px;height:103px;border-radius:17px;object-fit:cover;object-position:center 28%;border:4px solid white;flex-shrink:0}.guide strong{font-size:20px}.topics{display:grid;gap:11px}.topic{display:flex;align-items:center;gap:15px;width:100%;padding:12px;border:4px solid white;border-radius:24px;background:linear-gradient(120deg,#fff7e2,#fbd4e4);box-shadow:0 6px #dba3b2;text-align:left;color:#87346b;font-size:17px;font-weight:850}.topic:nth-child(even){background:linear-gradient(120deg,#e3faff,#c6dcff)}.topic em{font-size:39px;font-style:normal}.topic small{display:block;color:#9a6c91;font-size:12px;margin-top:3px}.back{border:3px solid #fff;background:#fff8d5;color:#a23c73;border-radius:18px;font-weight:900;padding:9px 13px;margin-bottom:13px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wordcard{display:flex;flex-direction:column;align-items:center;min-width:0;border:5px solid #fff;border-radius:28px;padding:12px 8px 14px;background:linear-gradient(150deg,#fffdf5,#ffecb2);box-shadow:0 7px #e8b565;color:#8b3263;text-align:center;gap:7px}.wordcard:nth-child(4n+2){background:linear-gradient(#fff7fe,#fbd2e7)}.wordcard:nth-child(4n+3){background:linear-gradient(#eefbff,#c5ecfc)}.wordcard:nth-child(4n){background:linear-gradient(#eeffe8,#c3f5cc)}.wordcard img{display:block;width:100%;height:136px;object-fit:contain;border-radius:18px;background:linear-gradient(155deg,#fff,#eef8ff);padding:7px}.wordcard .emoji{font-size:75px;height:136px;display:grid;place-items:center}.hy{font-weight:1000;font-size:21px;overflow-wrap:anywhere;line-height:1.25}.ru{font-weight:900;font-size:17px}.pr{font-size:12px;color:#945c80}.wordlarge img{width:100%;height:255px;object-fit:contain;padding:18px;background:#fffbef;border:5px solid #f9d8a6;border-radius:25px}.wordlarge .emoji{font-size:100px;text-align:center}.wordlarge .hy{font-size:32px;margin:14px 0 4px}.progress{display:flex;gap:5px;justify-content:center;margin:12px 0}.dot{width:10px;height:10px;border-radius:50%;background:white;border:2px solid #e5c57d}.dot.active{background:#f4437f;border:0}.answergrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.answer{border:4px solid white;border-radius:23px;background:linear-gradient(#ffecb9,#ffd9e8);padding:17px 7px;color:#8a2d68;min-height:100px;font-size:18px;font-weight:900;overflow-wrap:anywhere}.answer.correct{background:#aaf6b7}.answer.wrong{background:#ffd1d1}.feedback{border-radius:20px;padding:13px;text-align:center;font-weight:900;margin:16px 0;background:#e9fff0;color:#20834c}.feedback.bad{background:#fff1f4;color:#ae3763}.nava{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(530px,100%);z-index:10;display:flex;justify-content:space-around;background:#fffcf0;border:4px solid #ffe0a1;border-radius:28px 28px 0 0;padding:8px 0 calc(8px + env(safe-area-inset-bottom))}.nava button{border:0;background:transparent;color:#885d7e;display:flex;flex-direction:column;align-items:center;font-size:12px;font-weight:900;padding:4px}.nava span{font-size:26px}.alphabet{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.letter{border:3px solid white;background:#ffebad;border-radius:15px;padding:13px 2px;font-size:25px;color:#b42c5a;font-weight:1000}.letter:nth-child(4n+2){background:#c9eaff}.letter:nth-child(4n+3){background:#ffcfe2}.letter:nth-child(4n){background:#daf0c7}canvas{display:block;width:100%;height:320px;background:linear-gradient(180deg,transparent 24%,#e5dcef 24.5%,transparent 25%,transparent 49%,#e5dcef 49.5%,transparent 50%,transparent 74%,#e5dcef 74.5%,transparent 75%),#fff;border:4px solid #cfb6e0;border-radius:26px;touch-action:none}.rewardgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.reward-card{border:4px solid white;background:linear-gradient(#fff9df,#fce7b5);border-radius:22px;text-align:center;padding:8px 6px;color:#8a326a;font-weight:900}.reward-card img{width:100%;height:121px;object-fit:contain}.reward-card.locked img{filter:grayscale(1);opacity:.35}.reward-card.locked{background:#ebe8ef;color:#948797}.reward-card small{display:block;margin-top:7px}.reward-card.opened{box-shadow:0 4px #e6b33f}.screen-overlay{position:fixed;z-index:99;inset:0;background:radial-gradient(circle,#7942b8 0,#310a57 83%);display:flex;align-items:center;justify-content:center;padding:14px}.reward-pop{width:min(100%,470px);max-height:95dvh;overflow:auto;background:radial-gradient(circle at 50% 24%,#fff7c8 0,#ffe1aa 37%,#f9c3db 100%);border:6px solid white;border-radius:36px;padding:22px;text-align:center;box-shadow:0 0 45px #ffe86cae;animation:rise .45s both}.reward-pop h2{font-size:27px;margin:10px 0;color:#9a285d}.chest{position:relative;width:250px;height:205px;margin:18px auto 6px;filter:drop-shadow(0 9px 7px #542c5d6b)}.chest .lid{position:absolute;top:25px;left:18px;width:215px;height:84px;border:9px solid #ffd44a;border-radius:100px 100px 15px 15px;background:repeating-linear-gradient(48deg,#a7214d,#d93d50 20px,#ffc54a 25px,#d03547 35px);transform-origin:bottom;transition:transform .65s}.chest .boxch{position:absolute;left:15px;bottom:15px;width:220px;height:100px;border:10px solid #ffd44a;border-radius:17px;background:repeating-linear-gradient(90deg,#ae2150,#d63f52 39px,#ffe17a 44px,#a52a52 53px);box-shadow:inset 0 0 20px #ffc464}.chest .lock{position:absolute;z-index:2;left:110px;bottom:50px;width:34px;height:47px;background:#ffd645;border:5px solid #df981d;border-radius:8px}.chest.open .lid{transform:translateY(-65px) rotate(-16deg)}.revealimg{width:230px;height:230px;object-fit:contain;filter:drop-shadow(0 10px 12px #b96a3a8c);animation:pop .7s both}.sparkles{font-size:37px;letter-spacing:10px;animation:twinkle 1.3s infinite alternate}.reward-note{font-size:15px;color:#a25580}.subnav{display:flex;gap:9px}.subnav>button{flex:1}.sunline{font-size:34px;text-align:center;margin:12px 0}.congrats{font-size:23px;color:#a12d69;font-weight:900;text-align:center}.bighero{width:100%;height:220px;object-fit:cover;object-position:center 30%;border:5px solid white;border-radius:26px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.chip{background:#fff;padding:7px 12px;border-radius:20px;color:#8a426e;font-size:13px;font-weight:700}.hide{display:none!important}@keyframes rise{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}@keyframes pop{from{transform:scale(.1) translateY(70px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}@keyframes twinkle{to{filter:brightness(1.7);transform:scale(1.07)}}@media(max-width:360px){.logo{font-size:23px}.hero-option img{height:170px}.wordcard img{height:115px}.hy{font-size:18px}.nava button{font-size:10px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+/* Purple-gold illustrated storybook theme — interactive HTML, not screenshots */
+body{background:#3d167e}
+#app{background:radial-gradient(ellipse at 48% 6%,#b27aff 0%,transparent 31%),radial-gradient(ellipse at 88% 55%,#ad6aff55 0%,transparent 35%),linear-gradient(180deg,#5521a0 0%,#7e43c5 32%,#9d6be4 62%,#5634b2 100%);color:#722c65}
+#app:before{content:'✨   ⭐   ✨   ⭐';font-size:26px;top:100px;opacity:.85;color:#ffda69}
+.logo{color:#ef518d;text-shadow:-2px -2px white,2px 2px white,0 5px #ffd95c,0 9px #7b2079}
+.logo b{color:#4f85ed}.counter{background:linear-gradient(#fffbd8,#ffda7f);box-shadow:0 5px #c48b22}
+.panel{background:linear-gradient(155deg,#fffdf0 0%,#ffeaba 76%,#ffcbdc 100%);border-color:#fffaf6;box-shadow:0 8px #d6a24e,0 15px 30px #20055b66}
+.panel.blue{background:linear-gradient(135deg,#fef3ff,#c3eaff);box-shadow:0 8px #b86cbb,0 12px 22px #26055d55}
+.panel.pink{background:linear-gradient(135deg,#fff1f8,#f9cde7)}
+.panel.purple{background:linear-gradient(125deg,#f8dbff,#d49af4 45%,#b88ae8);box-shadow:0 8px #7b3caf,0 13px 23px #2a085966}
+.wordcard{background:linear-gradient(135deg,#fffcf0,#fff0bb);border-color:#fffbef;box-shadow:0 6px #f0c257,0 11px 15px #3f176a44}
+.wordcard:nth-child(4n+2){background:linear-gradient(#fff5fd,#ffd0e9)}
+.wordcard:nth-child(4n+3){background:linear-gradient(#eefaff,#c9e8ff)}
+.wordcard:nth-child(4n){background:linear-gradient(#f3ffe6,#cdf5c1)}
+.wordcard img{background:radial-gradient(circle,#fffefa 0,#fff1c6 100%);border:2px solid #ffe6a3}
+.bigbtn{border-color:#fff9e5;background:linear-gradient(180deg,#fff78c 0%,#ffce2d 54%,#f2a619 100%);box-shadow:0 7px #d48d1c,0 12px 20px #27094c66}
+.bigbtn.green{background:linear-gradient(#d5ff89,#79ed37 40%,#35c30c);box-shadow:0 7px #27971e,0 12px 20px #27094c66}
+.bigbtn.blue{background:linear-gradient(#9beaff,#32b0f7 62%,#2086de);box-shadow:0 7px #1c79a8}
+.nava{background:#fffae8;border-color:#ffdc8b;box-shadow:0 -5px 24px #31095a66}
+.rewardgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.reward-card{background:linear-gradient(150deg,#fffbed,#ffe7a4);border:4px solid #fffefa;box-shadow:0 5px #e0ab44,0 8px 18px #4b14755c}
+.reward-card img{height:145px;max-width:100%}
+.reward-card.locked{background:linear-gradient(#eee8f3,#d6cce3)}
+.screen-overlay{background:radial-gradient(ellipse at center,#8e3cde 0%,#50148c 48%,#250345 100%)}
+.reward-pop{background:radial-gradient(ellipse at 50% 10%,#fffcea 0%,#ffe6a7 48%,#ffbfdc 100%);box-shadow:0 0 50px #ffdb87ab;border-color:#fff8df}
+.reward-pop h2{color:#8d1c65}
+.chest{transform:scale(1.06)}
+.answer{background:linear-gradient(#fff9e6,#ffd9f0)}
+.answer.correct{background:linear-gradient(#d7ffd6,#96edab)}
+.answer.wrong{background:linear-gradient(#ffe4e1,#ffa7b9)}
+@media(max-width:360px){.reward-card img{height:118px}}
+
+/* Dedicated alphabet and stable writing board */
+.trace-wrap{height:315px;position:relative;isolation:isolate;margin:15px 0;border:5px solid #d4acec;border-radius:25px;overflow:hidden;background:repeating-linear-gradient(to bottom,#fffdfb 0px,#fffdfb 76px,#ebdcef 77px,#fffdfb 78px)}
+.trace-guide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(140px,44vw,204px);font-weight:850;color:#e8cde9;line-height:1;pointer-events:none;user-select:none;z-index:1}
+.trace-wrap canvas{position:absolute;inset:0;width:100%;height:100%;background:transparent;border:0;border-radius:0;z-index:2;touch-action:none}
+.alphabet-example{background:linear-gradient(150deg,#fff9e2,#ffdeaa);border:5px solid #fff;border-radius:28px;min-height:240px;margin:12px 0;padding:16px;display:flex;align-items:center;justify-content:center;gap:7px;flex-direction:column;text-align:center;box-shadow:0 7px #ddb064}
+.alphabet-example img{width:165px;height:145px;object-fit:contain}
+.alphabet-emoji{font-size:105px;line-height:1.3}
+.alphabet-example .hy{font-size:29px;color:#af2c66}
+.alphabet-example .ru{font-size:22px}
+
+/* Иллюстрации из утверждённого комплекта — объемные, не схематичные */
+.wordcard img{width:100%;height:160px;object-fit:contain;object-position:center;background:radial-gradient(circle at 50% 48%,#fffef3 4%,#ffedc5 100%);padding:6px;border:2px solid #f9d993;border-radius:22px;filter:drop-shadow(0 8px 5px #79365721)}
+.wordlarge>img{width:min(100%,330px);height:260px;object-fit:contain;margin:8px auto;display:block;filter:drop-shadow(0 8px 10px #5b208545)}
+.guide img{object-fit:contain!important;object-position:center bottom;background:linear-gradient(140deg,#e5b5ff,#ffe8ac);border-radius:20px}
+.hero-option img{object-fit:contain!important;object-position:center bottom;background:linear-gradient(155deg,#f9e4ff,#ffe4be)}
+.bighero{max-height:340px;object-fit:contain!important;filter:drop-shadow(0 9px 9px #6b258a33)}
+.reward-card img{width:100%;height:130px;object-fit:contain;filter:drop-shadow(0 7px 5px #6a264230)}
+.reward-card.locked img{filter:grayscale(1) brightness(.8);opacity:.42}
+.revealimg{width:min(85%,310px)!important;height:260px!important;object-fit:contain;filter:drop-shadow(0 0 18px #ffcd45)}
+.real-chest{display:block;width:min(100%,360px);height:240px;object-fit:contain;margin:5px auto 16px;filter:drop-shadow(0 12px 25px #ad427c77);animation:chestFloat 2.2s ease-in-out infinite}
+.real-chest-open{animation:chestReveal .7s ease-out both}
+@keyframes chestFloat{50%{transform:translateY(-7px) scale(1.02)}}
+@keyframes chestReveal{0%{opacity:0;transform:translateY(14px) scale(.87)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.alphabet-example img{width:200px;height:170px;object-fit:contain}
+@media(max-width:400px){.wordcard img{height:125px}.reward-card img{height:115px}}
+
+/* Upgraded violet & gold illustrated alphabet */
+#app{box-shadow:0 0 0 2px #efc6ff55,0 0 70px #1b043c55}
+.panel{border-color:#fff7e7;box-shadow:0 7px #e9b34a,0 15px 25px #240c4a33}
+.alphabet-example{background:radial-gradient(circle at 50% 25%,#fffefa,#fff1c3 76%);border:4px solid #ffdb78;box-shadow:0 0 0 4px #ffffff,0 9px #c99141;min-height:260px}
+.alphabet-example img{width:min(90%,280px);height:205px;object-fit:contain;filter:drop-shadow(0 9px 7px #7543903b)}
+.alphabet-example .hy{font-size:34px}
+.alphabet-example .ru{font-size:23px}
+.letter{box-shadow:0 4px #c08b3a;border-color:#fff9e9;transition:transform .12s}
+.letter:active,.wordcard:active,.topic:active{transform:scale(.97)}
+.wordcard img{background:radial-gradient(circle at 50% 42%,#fffdfa 5%,#ffe3b7 100%)}
+.guide{background:linear-gradient(115deg,#fffaf0,#f8dbff);border-color:#ffefcf}
+.guide img{object-fit:contain;background:radial-gradient(circle,#f9e1ff,#ffe8bf)}
+.logo{color:#c42773}.logo b{color:#7931c7}
+@media(min-width:600px){#app{border-radius:28px;margin:16px auto}}
+
+/* Clear readable picture cards on small iPhone screens */
+.wordcard img {background:radial-gradient(circle,#fffef9,#fce7c9);border-radius:20px;object-fit:contain}
+.wordlarge>img {max-height:300px}
+.alphabet-example img {max-width:100%;height:220px}
+@media (max-width:380px) {.alphabet-example img{height:185px}}
+
+/* Mobile-screen adjustments — November 2026 */
+html,body{max-width:100%;overflow-x:hidden}
+#app{width:100%;padding-bottom:calc(114px + env(safe-area-inset-bottom,0px))}
+.top{gap:8px}.logo{min-width:0;font-size:clamp(21px,6.1vw,28px);white-space:nowrap}.counter{flex-shrink:0;padding:7px 10px;font-size:clamp(15px,4vw,19px)}
+.guide{min-height:0}.guide img{width:76px;height:91px;object-fit:contain;background:#ffe9d9}.guide strong{font-size:clamp(16px,4.4vw,20px)}
+.panel{padding:14px;margin-bottom:16px}.alphabet-example{min-height:0;padding:12px;margin:10px 0}.alphabet-example img{width:100%;max-width:225px;height:175px;object-fit:contain}
+.nava{padding:7px 4px calc(7px + env(safe-area-inset-bottom,0px));min-height:68px}.nava button{min-width:0;flex:1;font-size:11px}.nava span{font-size:23px}
+@media(max-width:360px){.logo{font-size:20px}.counter{padding:6px}.guide img{width:65px;height:81px}.guide strong{font-size:15px}.alphabet{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+/* Letter screens: designed to fit the entire activity between browser chrome and bottom navigation */
+#app:has(.letter-screen){padding:8px 12px calc(76px + env(safe-area-inset-bottom,0px));min-height:100dvh}
+#app:has(.letter-screen) .top{margin:0 0 9px}
+.letter-screen{padding:12px 12px 13px!important;margin:0!important;border-radius:29px}
+.letter-topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.letter-topline .back{margin:0;padding:8px 12px;font-size:14px;border-radius:15px}
+.letter-count{font-size:17px;font-weight:1000;color:#87336c;white-space:nowrap}
+.letter-content{display:flex;flex-direction:column;align-items:center;gap:4px}
+.letter-glyph{font-size:clamp(60px,15vw,83px);line-height:1.12;font-weight:900;color:#c82766;text-align:center;min-height:68px}
+.letter-screen .alphabet-example{width:100%;margin:0!important;padding:7px 9px 9px!important;gap:2px!important;border-width:3px;box-shadow:0 0 0 3px white,0 5px #c99141;border-radius:23px;min-height:0!important}
+.letter-screen .alphabet-example img{display:block;height:clamp(92px,21dvh,145px);width:100%;max-width:230px;object-fit:contain;filter:drop-shadow(0 3px 3px #75439028)}
+.letter-screen .alphabet-example .hy{font-size:clamp(20px,5.4vw,26px);line-height:1.2}
+.letter-screen .alphabet-example .ru{font-size:clamp(15px,4vw,19px);line-height:1.2}
+.letter-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:13px}
+.letter-actions .bigbtn{width:100%;margin:0;min-height:49px;padding:7px 3px;border-width:3px;border-radius:17px;font-size:clamp(13px,3.9vw,17px);box-shadow:0 4px #b88649;text-shadow:none}
+.letter-actions .bigbtn.green{color:#23651f}.letter-actions .bigbtn.blue{color:#075c90}
+#app:has(.letter-screen) .nava{min-height:62px;padding:3px 3px calc(4px + env(safe-area-inset-bottom,0px))}
+#app:has(.letter-screen) .nava button{padding:2px;font-size:10px}
+#app:has(.letter-screen) .nava span{font-size:21px}
+@media(max-height:720px){#app:has(.letter-screen) .top{margin-bottom:6px} .letter-screen{padding:9px!important}.letter-glyph{font-size:60px;min-height:55px}.letter-screen .alphabet-example img{height:90px}.letter-actions{margin-top:8px}.letter-actions .bigbtn{min-height:45px}}
+
+/* ADAPTIVE MOBILE SCREENS — shared iPhone/Android focused layout */
+html,body{min-height:100%;overscroll-behavior-y:contain}
+#app.focus-letter,#app.focus-write{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden;padding:8px 12px calc(75px + env(safe-area-inset-bottom, 0px))}
+#app.focus-letter .top,#app.focus-write .top{flex:0 0 auto;margin-bottom:9px}
+#app.focus-letter .nava,#app.focus-write .nava{min-height:65px;padding:5px 4px calc(5px + env(safe-area-inset-bottom,0px))}
+#app.focus-letter .nava button,#app.focus-write .nava button{font-size:11px}
+#app.focus-letter .nava span,#app.focus-write .nava span{font-size:23px}
+#app.focus-letter .letter-screen,#app.focus-write .write-screen{flex:1;min-height:0;margin:0!important;padding:12px!important;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 4px #eab65e}
+#app.focus-letter .letter-topline{flex:0 0 auto}
+#app.focus-letter .letter-content{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:4px;padding:4px 0 8px}
+#app.focus-letter .letter-glyph{flex:0 0 auto;font-size:clamp(59px,9dvh,84px);min-height:0;line-height:1.03}
+#app.focus-letter .alphabet-example{flex:1;min-height:0;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0!important;padding:7px 8px!important}
+#app.focus-letter .alphabet-example img{height:auto!important;min-height:0;flex:1;max-width:100%;max-height:100%;object-fit:contain}
+#app.focus-letter .letter-words{flex:0 0 auto;text-align:center}
+#app.focus-letter .letter-actions{flex:0 0 auto;margin-top:8px;gap:7px}
+#app.focus-letter .letter-actions .bigbtn{min-height:47px}
+#app.focus-write .write-screen .back{align-self:flex-start;margin:0 0 5px;padding:6px 10px;font-size:14px}
+#app.focus-write .write-screen .heading{flex:0 0 auto;font-size:clamp(18px,5vw,23px);margin:3px 0}
+#app.focus-write .write-screen>.center{flex:0 0 auto;line-height:1}
+#app.focus-write .write-screen>.center span{font-size:clamp(36px,6dvh,57px)!important;line-height:1}
+#app.focus-write .write-screen>.center .small{font-size:11px;margin:1px 0}
+#app.focus-write .trace-wrap{flex:1;min-height:0;position:relative;margin:7px 0 8px}
+#app.focus-write .trace-wrap canvas{height:100%!important;width:100%;min-height:0;border-radius:18px}
+#app.focus-write .trace-guide{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;font-size:clamp(100px,24dvh,220px);opacity:.12;line-height:1}
+#app.focus-write .subnav{flex:0 0 auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#app.focus-write .subnav .bigbtn{margin:0;padding:8px 4px;min-height:45px;font-size:clamp(14px,4vw,17px);border-width:3px;border-radius:16px}
+#app.focus-write .write-screen>.small{font-size:10px;line-height:1.15;margin-top:5px}
+#app.focus-gallery .top{margin-bottom:8px}
+#app.focus-gallery .panel{padding:12px;margin-bottom:0}
+#app.focus-gallery .heading{margin:0 0 9px}
+#app.focus-gallery .wordcard img{height:clamp(105px,18dvh,160px)}
+@media(max-height:640px){#app.focus-letter .letter-glyph{font-size:52px}#app.focus-letter .letter-screen,#app.focus-write .write-screen{padding:8px!important}#app.focus-write .write-screen>.small{display:none}}
+
+/* Full-height flashcard layout for iOS Safari and Android Chrome.
+   100dvh accounts for browser chrome, keeping text/action above bottom navigation. */
+#app.focus-word{
+  height:100dvh; min-height:0; display:flex; flex-direction:column;
+  overflow:hidden; padding:8px 12px calc(82px + env(safe-area-inset-bottom,0px));
+}
+#app.focus-word .top{flex:0 0 auto;margin-bottom:9px}
+#app.focus-word .word-screen{
+  flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden;
+  margin:0!important;padding:12px!important;
+  border-radius:27px;box-shadow:0 5px #eab65e;
+}
+#app.focus-word .word-screen .back{
+  flex:0 0 auto;align-self:flex-start;margin:0 0 4px;
+  padding:7px 11px;font-size:clamp(13px,3.5vw,16px);
+}
+#app.focus-word .word-screen>.small{flex:0 0 auto;font-size:13px;line-height:1.2}
+#app.focus-word .word-screen .progress{flex:0 0 auto;margin:7px 0 10px}
+#app.focus-word .word-screen>img{
+  display:block;flex:1 1 auto;min-height:0;height:0!important;
+  width:100%;max-width:100%;object-fit:contain;
+  padding:9px;background:#fffbef;border:4px solid #f9d8a6;border-radius:22px;
+}
+#app.focus-word .word-screen>.emoji{flex:1 1 auto;min-height:0;display:grid;place-items:center}
+#app.focus-word .word-screen>.center{flex:0 0 auto;padding:4px 0 0;min-height:0}
+#app.focus-word .word-screen .hy{font-size:clamp(24px,6.3vw,34px);line-height:1.15;margin:4px 0 2px;overflow-wrap:anywhere}
+#app.focus-word .word-screen .pr{font-size:clamp(12px,3.4vw,15px);line-height:1.2}
+#app.focus-word .word-screen h2{font-size:clamp(16px,4.4vw,22px);line-height:1.18;margin:3px 0 4px}
+#app.focus-word .word-screen>.bigbtn{
+  flex:0 0 auto;margin:5px 0 1px;min-height:47px;padding:7px 5px;
+  font-size:clamp(15px,4vw,19px);border-width:3px;border-radius:18px;
+  box-shadow:0 4px #299b1b;
+}
+#app.focus-word .nava{min-height:65px;padding:4px 3px calc(5px + env(safe-area-inset-bottom,0px))}
+#app.focus-word .nava button{font-size:11px;padding:2px}
+#app.focus-word .nava span{font-size:23px}
+@media(max-height:670px){
+  #app.focus-word{padding-top:5px;padding-bottom:calc(74px + env(safe-area-inset-bottom,0px))}
+  #app.focus-word .top{margin-bottom:5px}
+  #app.focus-word .word-screen{padding:8px!important}
+  #app.focus-word .word-screen .progress{margin:4px 0}
+  #app.focus-word .word-screen>.bigbtn{min-height:42px}
+}
+
+/* Home: four real navigation tiles fully visible above bottom menu on a phone. */
+@media(max-width:600px){
+ #app.focus-home{
+  height:100dvh;min-height:0;overflow:hidden;display:flex;flex-direction:column;
+  padding:clamp(6px,1.2dvh,12px) 12px calc(80px + env(safe-area-inset-bottom,0px));
+ }
+ #app.focus-home .top{flex:0 0 auto;margin:0 0 clamp(6px,1dvh,10px);min-height:42px}
+ #app.focus-home .logo{font-size:clamp(21px,6.2vw,28px)}
+ #app.focus-home .counter{padding:7px 11px;font-size:15px}
+ #app.focus-home>.guide{
+  flex:0 0 auto;min-height:0;margin:0 0 clamp(9px,1.5dvh,15px)!important;
+  padding:clamp(8px,1.5dvh,13px);border-width:4px;border-radius:25px;gap:10px;
+ }
+ #app.focus-home>.guide img{width:clamp(62px,10dvh,85px);height:clamp(70px,11dvh,94px);border-width:3px}
+ #app.focus-home>.guide strong{font-size:clamp(15px,4.7vw,19px);line-height:1.12}
+ #app.focus-home>.guide div{font-size:clamp(13px,4vw,16px);line-height:1.22}
+ #app.focus-home>.guide div div{margin-top:4px!important}
+ #app.focus-home>.guide + .panel{
+  flex:0 0 auto;margin:0 0 clamp(10px,1.8dvh,16px)!important;
+  padding:clamp(7px,1.3dvh,12px) 7px;border-width:4px;border-radius:25px;
+ }
+ #app.focus-home>.guide + .panel .heading{font-size:clamp(18px,5.2vw,23px);line-height:1.12;margin:0 0 5px}
+ #app.focus-home>.guide + .panel .center{font-size:clamp(14px,4.2vw,18px)!important;line-height:1.25}
+ #app.focus-home>.tiles{
+  flex:1 1 auto;min-height:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));gap:clamp(9px,1.5dvh,14px);
+ }
+ #app.focus-home>.tiles .tile{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:0;padding:5px 3px;border-width:4px;border-radius:24px;
+  font-size:clamp(14px,4.4vw,19px);line-height:1.14;
+ }
+ #app.focus-home>.tiles .tileico{font-size:clamp(28px,6dvh,44px);line-height:1;margin:0 0 clamp(4px,.8dvh,9px)}
+ #app.focus-home>.tiles + .panel{display:none}
+ #app.focus-home .nava{min-height:66px;padding:4px 3px calc(5px + env(safe-area-inset-bottom,0px))}
+ #app.focus-home .nava button{padding:2px;font-size:11px}
+ #app.focus-home .nava span{font-size:23px}
+}
+@media(max-height:620px) and (max-width:600px){
+ #app.focus-home>.guide img{width:60px;height:62px}
+ #app.focus-home>.guide div{font-size:12px}
+ #app.focus-home>.guide + .panel .heading{font-size:17px}
+ #app.focus-home>.guide + .panel .center{font-size:13px!important}
+}
+</style></head><body><main id="app"></main><script>const LESSONS=[["Приветствие", "👋", [["Բարև", "Привет", "Барев", "hello", "👋"], ["Ցտեսություն", "До свидания", "Цтесутюн", "bye", "🚶"], ["Շնորհակալություն", "Спасибо", "Шноракалутюн", "thanks", "💝"], ["Խնդրեմ", "Пожалуйста / не за что", "Хндрем", "please", "🎁"]]], ["Первые слова", "🌞", [["Այո", "Да", "Айо", "yes", "✅"], ["Ոչ", "Нет", "Воч", "no", "❌"], ["Լավ", "Хорошо", "Лав", "good", "👍"], ["Խնդրում եմ", "Пожалуйста (при просьбе)", "Хндрум ем", "askplease", "🙏"]]], ["Знакомство", "🤝", [["Անունդ ի՞նչ է։", "Как тебя зовут?", "Анунд инч э?", "question_name", "❓"], ["Իմ անունը Հայկ է։", "Меня зовут Айк", "Им ануны Айк э", "name_aik", "👦"], ["Իմ անունը Արևիկ է։", "Меня зовут Аревик", "Им ануны Аревик э", "name_arevik", "👧"], ["Ուրախ եմ ծանոթանալու։", "Рад(а) знакомству", "Урах эм цанотаналу", "nice_meet", "💛"]]], ["Моя семья", "👪", [["Մայրիկ", "Мама", "Майрик", "mother", "👩"], ["Հայրիկ", "Папа", "Айрик", "father", "👨"], ["Եղբայր", "Брат", "Ехпайр", "brother", "👦"], ["Քույր", "Сестра", "Куйр", "sister", "👧"]]], ["Животные", "🐱", [["Կատու", "Кошка", "Кату", "cat", "🐱"], ["Շուն", "Собака", "Шун", "dog", "🐶"], ["Կով", "Корова", "Ков", "cow", "🐮"], ["Թռչուն", "Птица", "Трчун", "bird", "🐦"], ["Նապաստակ", "Заяц", "Напастак", "rabbit", "🐰"], ["Արջ", "Медведь", "Ардж", "bear", "🐻"]]], ["Цвета", "🎨", [["Կարմիր", "Красный", "Кармир", "red", "🔴"], ["Կապույտ", "Синий", "Капуйт", "blue", "🔵"], ["Դեղին", "Жёлтый", "Дехин", "yellow", "🟡"], ["Կանաչ", "Зелёный", "Канач", "green", "🟢"], ["Նարնջագույն", "Оранжевый", "Нарнджагуйн", "orange", "🟠"], ["Վարդագույն", "Розовый", "Вардагуйн", "pink", "🩷"]]], ["Числа", "🔢", [["Մեկ", "Один", "Мек", "one", "1️⃣"], ["Երկու", "Два", "Ерку", "two", "2️⃣"], ["Երեք", "Три", "Ерек", "three", "3️⃣"], ["Չորս", "Четыре", "Чорс", "four", "4️⃣"], ["Հինգ", "Пять", "Хинг", "five", "5️⃣"], ["Վեց", "Шесть", "Вец", "six", "6️⃣"], ["Յոթ", "Семь", "Йот", "seven", "7️⃣"], ["Ութ", "Восемь", "Ут", "eight", "8️⃣"], ["Ինը", "Девять", "Ины", "nine", "9️⃣"], ["Տասը", "Десять", "Тасы", "ten", "🔟"]]], ["Фрукты и еда", "🍎", [["Խնձոր", "Яблоко", "Хндзор", "apple", "🍎"], ["Բանան", "Банан", "Банан", "banana", "🍌"], ["Տանձ", "Груша", "Тандз", "pear", "🍐"], ["Խաղող", "Виноград", "Хахох", "grapes", "🍇"], ["Ծիրան", "Абрикос", "Циран", "apricot", "🍑"], ["Նուռ", "Гранат", "Нур", "pomegranate", "❤️"], ["Հաց", "Хлеб", "Хац", "bread", "🍞"], ["Կաթ", "Молоко", "Кат", "milk", "🥛"], ["Ջուր", "Вода", "Джур", "water", "💧"]]], ["Игрушки", "🧸", [["Գնդակ", "Мяч", "Гндак", "ball", "⚽"], ["Տիկնիկ", "Кукла", "Тикник", "doll", "🪆"], ["Մեքենա", "Машина", "Мекена", "car", "🚗"]]], ["Первые фразы", "💬", [["Ես ջուր եմ ուզում։", "Я хочу воды", "Ес джур ем узум", "want_water", "💧"], ["Ես գնդակ ունեմ։", "У меня есть мяч", "Ес гндак унем", "have_ball", "⚽"], ["Ես սիրում եմ կատուներին։", "Я люблю кошек", "Ес сирум ем катунерин", "love_cats", "🐱"]]]];
+const PRIZES=[["Гранат", "new_pomegranate.webp"], ["Абрикос", "new_apricot.webp"], ["Дудук", "new_duduk.webp"], ["Армянский ковёр", "new_carpet.webp"], ["Солнце Армении", "sun.webp"], ["Армянский орнамент", "ornament.webp"], ["Буква Айб", "ayb.webp"], ["Кувшин", "jug.webp"], ["Армянская церковь", "church.webp"], ["Арарат", "ararat.webp"]];
+const LETTERS=["Ա", "Բ", "Գ", "Դ", "Ե", "Զ", "Է", "Ը", "Թ", "Ժ", "Ի", "Լ", "Խ", "Ծ", "Կ", "Հ", "Ձ", "Ղ", "Ճ", "Մ", "Յ", "Ն", "Շ", "Ո", "Չ", "Պ", "Ջ", "Ռ", "Ս", "Վ", "Տ", "Ր", "Ց", "Ու", "Փ", "Ք", "և", "Օ", "Ֆ"];
+const ALPHABET_EXAMPLES={"0":["Արև","Солнце","assets/illustrations/sun.webp",""],"1":["Բանան","Банан","assets/illustrations/banana.webp",""],"2":["Գնդակ","Мяч","assets/illustrations/ball.webp",""],"3":["Դուդուկ","Дудук","assets/illustrations/duduk.webp",""],"4":["Երեխա","Ребёнок","assets/illustrations/name_arevik.webp",""],"5":["Զանգ","Колокольчик","assets/illustrations/bell.webp",""],"6":["Էշ","Осёл","assets/illustrations/donkey.webp",""],"7":["Ընկեր","Друг","assets/illustrations/friends.webp",""],"8":["Թռչուն","Птица","assets/illustrations/bird.webp",""],"9":["Ժամացույց","Часы","assets/illustrations/clock.webp",""],"10":["Ինքնաթիռ","Самолёт","assets/illustrations/plane.webp",""],"11":["Լեռ","Гора","assets/illustrations/mountain.webp",""],"12":["Խնձոր","Яблоко","assets/illustrations/apple.webp",""],"13":["Ծիրան","Абрикос","assets/illustrations/apricot.webp",""],"14":["Կատու","Кошка","assets/illustrations/cat.webp",""],"15":["Հավ","Курица","assets/illustrations/hen.webp",""],"16":["Ձուկ","Рыба","assets/illustrations/fish.webp",""],"17":["Ղեկ","Руль","assets/illustrations/steering.webp",""],"18":["Ճուտ","Цыплёнок","assets/illustrations/chick.webp",""],"19":["Մայրիկ","Мама","assets/illustrations/mother.webp",""],"20":["Յոթ","Семь","assets/illustrations/seven_apples.webp",""],"21":["Նուռ","Гранат","assets/illustrations/pomegranate.webp",""],"22":["Շուն","Собака","assets/illustrations/dog.webp",""],"23":["Ոզնի","Ёж","assets/illustrations/hedgehog.webp",""],"24":["Չորս","Четыре","assets/numbers/4.webp",""],"25":["Պաղպաղակ","Мороженое","assets/illustrations/icecream.webp",""],"26":["Ջուր","Вода","assets/illustrations/water.webp",""],"27":["Ռոբոտ","Робот","assets/illustrations/robot.webp",""],"28":["Սեղան","Стол","assets/illustrations/table.webp",""],"29":["Վարդ","Роза","assets/illustrations/rose.webp",""],"30":["Տանձ","Груша","assets/illustrations/pear.webp",""],"31":["Րոպե","Минута","assets/illustrations/clock.webp",""],"32":["Ցուլ","Бык","assets/illustrations/bull.webp",""],"33":["Ուղտ","Верблюд","assets/illustrations/camel.webp",""],"34":["Փուչիկ","Воздушный шарик","assets/illustrations/balloon.webp",""],"35":["Քույր","Сестра","assets/illustrations/sister.webp",""],"36":["և","И (соединяет слова)","assets/illustrations/and.webp",""],"37":["Օձ","Змея","assets/illustrations/snake.webp",""],"38":["Ֆուտբոլ","Футбол","assets/illustrations/football.webp",""]};
+const KEY='barev-kids-vibrant-2026';
+const getSaved=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return {}}};
+const saved=getSaved();
+// Migrate previously installed Barev Kids progress when available.
+let legacy={};try{legacy=JSON.parse(localStorage.getItem('barev-kids-original-ui-v1')||'{}')}catch{}
+const oldCompleted=Array.isArray(legacy.completed)?legacy.completed:[];
+const oldLetters=Array.isArray(legacy.known)?legacy.known.filter(x=>Number.isInteger(x)&&x>=0&&x<39):[];
+const oldRewards=Array.isArray(legacy.prizeClaims)?legacy.prizeClaims.filter(x=>Number.isInteger(x)&&x>=0&&x<10):[];
+const state={screen:'choose',hero:saved.hero||legacy.hero||'Аревик',stars:saved.stars??legacy.stars??0,completed:saved.completed||oldCompleted,rewards:saved.rewards||oldRewards,reviewed:saved.reviewed||[],lesson:0,word:0,quiz:0,selected:-1,wrong:false,overlay:null,rewardStage:'closed',lettersDone:saved.lettersDone||oldLetters,letter:0,traceDone:0};
+const persist=()=>{try{localStorage.setItem(KEY,JSON.stringify({hero:state.hero,stars:state.stars,completed:state.completed,rewards:state.rewards,lettersDone:state.lettersDone,reviewed:state.reviewed}))}catch{}};
+const heroImg=()=>state.hero==='Айк'?'assets/heroes/aik_teach.webp':'assets/heroes/arevik_teach.webp';
+const h=(s)=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const NEW_WORD_IMAGE={cat:'cat',dog:'dog',cow:'cow',bird:'bird',rabbit:'rabbit',bear:'bear',apricot:'apricot',pomegranate:'pomegranate'};
+const PREMIUM_WORDS=new Set(['bye','thanks','please','yes','no','good','askplease','mother','father','brother','sister','red','blue','yellow','green','orange','pink','apple','banana','pear','grapes','bread','milk','water','ball','doll','car']);
+const imgFor=(w)=>/^(one|two|three|four|five|six|seven|eight|nine|ten)$/.test(w[3])?`assets/numbers/${['one','two','three','four','five','six','seven','eight','nine','ten'].indexOf(w[3])+1}.webp`: `assets/words/${w[3]}.webp`;
+const renderTop=()=>`<header class="top"><div class="logo">Барев <b>Kids</b> 🌈</div><div class="counter">⭐ ${state.stars}</div></header>`;
+const guide=(phrase)=>`<section class="panel blue guide"><img src="${heroImg()}" alt="${h(state.hero)}" onerror="this.onerror=null;this.src='${state.hero==='Айк'?'aik-approved.webp':'arevik-approved.webp'}'"><div><strong>${h(state.hero)} рядом! 🌟</strong><div style="margin-top:7px">${phrase}</div></div></section>`;
+const nav=()=>`<nav class="nava"><button data-do="home"><span>🏠</span>Главная</button><button data-do="alphabet"><span>🔤</span>Алфавит</button><button data-do="topics"><span>📚</span>Уроки</button><button data-do="rewards"><span>🏆</span>Награды</button></nav>`;
+const go=(screen)=>{state.screen=screen;state.wrong=false;state.selected=-1;render();scrollToTop()};
+const scrollToTop=()=>window.scrollTo({top:0,behavior:'instant'});
+const wordImage=(w)=>w[3]?`<img src="${imgFor(w)}" alt="${h(w[1])}" onerror="this.style.display='none';this.parentNode.insertAdjacentHTML('beforeend','<div class=&quot;emoji&quot;>${w[4]||'🌟'}</div>')">`:`<div class="emoji">${w[4]||'🌟'}</div>`;
+const choose=()=>`<section class="panel center"><div class="heading">Выбери героя! 🌈</div><p>С кем будем изучать армянский?</p><div class="hero-options">${['Айк','Аревик'].map(x=>`<button class="hero-option ${state.hero===x?'selected':''}" data-do="hero" data-hero="${x}"><img src="${x==='Айк'?'assets/heroes/aik_hello.webp':'assets/heroes/arevik_hello.webp'}" alt="${x}"><div class="namebar">${x}</div></button>`).join('')}</div><button class="bigbtn green" data-do="home">▶ Начать приключение</button></section>`;
+const home=()=>`${guide('Բարև! Привет! Давай учиться вместе!')}<section class="panel"><div class="heading">Мои успехи ⭐</div><div class="center" style="font-size:19px">Изучено букв: <b>${state.lettersDone.length}/39</b><br>Пройдено уроков: <b>${state.completed.length}/10</b></div></section><div class="tiles"><button class="tile" data-do="alphabet"><span class="tileico">🔤</span>Алфавит</button><button class="tile" data-do="topics"><span class="tileico">📚</span>Уроки и слова</button><button class="tile" data-do="write"><span class="tileico">✏️</span>Письмо</button><button class="tile" data-do="rewards"><span class="tileico">🏆</span>Награды</button></div><section class="panel" style="margin-top:23px"><div class="heading">Учим армянский вместе! 🇦🇲</div><img class="bighero" src="${heroImg()}" alt="Выбранный герой"><button class="bigbtn" data-do="choose">Сменить героя</button></section>`;
+const topics=()=>`${guide('Выбирай яркую тему и смотри картинки!')}<section class="panel"><div class="heading">Мои 10 уроков 📚</div><div class="topics">${LESSONS.map((l,i)=>`<button class="topic" data-do="topic" data-i="${i}"><em>${l[1]}</em><span>${i+1}. ${l[0]}<small>${l[2].length} карточек ${state.completed.includes(i)?' · ✅ пройдено':''}</small></span></button>`).join('')}</div></section>`;
+const gallery=()=>{const l=LESSONS[state.lesson];return `<section class="panel"><button class="back" data-do="topics">← К темам</button><div class="heading">${l[1]} ${l[0]}</div><div class="gallery">${l[2].map((w,i)=>`<button class="wordcard" data-do="card" data-i="${i}">${wordImage(w)}<span class="ru">${h(w[1])}</span><span class="hy" lang="hy">${h(w[0])}</span></button>`).join('')}</div><button class="bigbtn green" data-do="startlesson">▶ Начать урок</button></section>`};
+const wordPage=()=>{const l=LESSONS[state.lesson],w=l[2][state.word];return `<section class="panel wordlarge word-screen"><button class="back" data-do="gallery">← Все карточки</button><div class="small center">Карточка ${state.word+1} из ${l[2].length}</div><div class="progress">${l[2].map((_,i)=>`<div class="dot ${i<=state.word?'active':''}"></div>`).join('')}</div>${wordImage(w)}<div class="center"><div class="hy" lang="hy">${h(w[0])}</div><div class="pr">${h(w[2])}</div><h2>${h(w[1])}</h2></div><button class="bigbtn green" data-do="nextword">${state.word===l[2].length-1?'✅ Проверим, что запомнили':'Дальше →'}</button></section>`};
+const quizChoices=()=>{const l=LESSONS[state.lesson],arr=l[2],n=state.quiz;let indexes=[n];for(let o=1;o<arr.length&&indexes.length<4;o++)indexes.push((n+o)%arr.length);return indexes.sort((a,b)=>((a*7+n*3)%11)-((b*7+n*3)%11))};
+const quizPage=()=>{const l=LESSONS[state.lesson],w=l[2][state.quiz],opts=quizChoices();return `${guide('Посмотри на слово и выбери правильный перевод.')}<section class="panel"><div class="small center">Вопрос ${state.quiz+1} из ${l[2].length}</div><div class="heading">Что означает это слово?</div><div class="hy center" lang="hy" style="font-size:31px;margin:20px 0">${h(w[0])}</div><div class="answergrid">${opts.map(i=>`<button class="answer ${state.selected===i?(i===state.quiz?'correct':'wrong'):''}" data-do="answer" data-i="${i}">${h(l[2][i][1])}</button>`).join('')}</div>${state.wrong?'<div class="feedback bad">💛 Неправильно. Попробуй ещё раз!</div>':''}${state.selected===state.quiz?`<div class="feedback">🎉 Правильно! Молодец! +5 ⭐</div><button class="bigbtn green" data-do="nextquiz">${state.quiz===l[2].length-1?'🎁 Получить награду':'Следующее слово →'}</button>`:''}</section>`};
+const alphabetPage=()=>`${guide('Смотри букву, картинку и новое слово!')}<section class="panel"><div class="heading">Армянский алфавит 🔤</div><div class="small center" style="margin-bottom:14px">Выбери букву, чтобы увидеть её крупно. Письмо — отдельно. Все 39 букв с красивыми иллюстрациями. Нажми на букву, чтобы узнать новое слово.</div><div class="alphabet">${LETTERS.map((x,i)=>`<button class="letter" data-do="letter" data-i="${i}">${x}${state.lettersDone.includes(i)?'<small style="display:block;font-size:10px">✓</small>':''}</button>`).join('')}</div></section>`;
+const letterDetail=()=>{const x=LETTERS[state.letter],ex=ALPHABET_EXAMPLES[state.letter];return `<section class="panel letter-screen"><div class="letter-topline"><button class="back" data-do="alphabet">← Все буквы</button><span class="letter-count">${state.letter+1} / 39</span></div><div class="letter-content"><div class="letter-glyph" lang="hy">${x}</div>${ex?`<div class="alphabet-example"><img src="${ex[2]}" alt="${h(ex[1])}" onerror="this.onerror=null;this.style.display='none';this.insertAdjacentHTML('afterend','<div class=&quot;alphabet-emoji&quot;>🌟</div>')"><div class="letter-words"><div class="hy" lang="hy">${h(ex[0])}</div><div class="ru">${ex[1]}</div></div></div>`:`<div class="alphabet-example"><div class="alphabet-emoji">🔤</div><div class="small">Изучаем форму буквы</div></div>`}</div><div class="letter-actions"><button class="bigbtn blue" data-do="write">✏️ Написать</button><button class="bigbtn green" data-do="nextalphabet">Дальше →</button></div></section>`};
+const writePage=()=>{const letter=LETTERS[state.letter];return `<section class="panel write-screen"><button class="back" data-do="letter" data-i="${state.letter}">← К букве</button><div class="heading">Тренируем письмо ✏️</div><div class="center"><span lang="hy" style="font-size:67px;color:#d32962;font-weight:1000">${letter}</span><div class="small">${state.letter+1} из 39</div></div><div class="trace-wrap"><div class="trace-guide" lang="hy">${letter}</div><canvas id="draw" aria-label="Поле для письма"></canvas></div><div class="subnav"><button class="bigbtn blue" data-do="clear">↩ Очистить</button><button class="bigbtn green" data-do="nextletter">✓ Готово →</button></div><div class="small center">Тренировка свободного письма без автоматической оценки. Рисунок всегда остаётся внутри рамки.</div></section>`};
+const rewardsPage=()=>`${guide('Собирай сокровища Армении!')}<section class="panel purple"><div class="heading">🏆 Моя коллекция</div><div class="center" style="font-size:20px;margin-bottom:15px">Собрано: ${state.rewards.length} из 10</div><div class="rewardgrid">${PRIZES.map((p,i)=>`<div class="reward-card ${state.rewards.includes(i)?'opened':'locked'}"><img src="assets/prizes/${p[1]}" alt="${h(p[0])}"><div>${h(p[0])}</div><small>${state.rewards.includes(i)?'✅ Получено':'🔒 Закрыто'}</small></div>`).join('')}</div></section>`;
+function completion(){const idx=state.lesson,first=!state.completed.includes(idx);if(first){state.completed.push(idx);state.stars+=20}persist();state.overlay={lesson:idx,first};state.rewardStage=state.rewards.includes(idx)?'already':'closed';render()}
+const rewardModal=()=>{const idx=state.overlay.lesson,p=PRIZES[idx],step=state.rewardStage;return `<div class="screen-overlay" role="dialog" aria-modal="true" aria-label="Награда за урок"><div class="reward-pop">${step==='closed'?`<div class="sparkles">✨⭐✨</div><h2>Ура! Тема пройдена!</h2><p>Ты изучил тему «${LESSONS[idx][0]}»!</p><h3>⭐ +20 звёзд</h3><img class="real-chest" src="assets/chest/closed.webp" alt="Закрытый сундук"><button class="bigbtn" data-do="openchest">🎁 Открыть сундук</button>`:step==='open'?`<div class="sparkles">✨🌟✨</div><h2>Сундук открывается!</h2><img class="real-chest real-chest-open" src="assets/chest/open.webp" alt="Открытый сундук"><button class="bigbtn" data-do="reveal">Посмотреть подарок →</button>`:`<div class="sparkles">✨🎊✨</div><h2>${step==='already'?'Подарок уже в коллекции!':'Новая награда!'}</h2><img class="revealimg" src="assets/prizes/${p[1]}" alt="${h(p[0])}"><h2>${h(p[0])}</h2><div class="reward-note">${step==='already'?'Можно снова пройти урок для повторения.':'Сокровище Армении!'}</div><button class="bigbtn green" data-do="collect">🏆 ${step==='already'?'К моим наградам':'В мою коллекцию'}</button><button class="bigbtn blue" data-do="continue">Продолжить обучение</button>`}</div></div>`};
+
+function barevInlineImages(markup){return markup;}
+function render(){let contents='';switch(state.screen){case 'choose':contents=choose();break;case 'home':contents=home();break;case 'topics':contents=topics();break;case 'gallery':contents=gallery();break;case 'word':contents=wordPage();break;case 'quiz':contents=quizPage();break;case 'alphabet':contents=alphabetPage();break;case 'letterdetail':contents=letterDetail();break;case 'write':contents=writePage();break;case 'rewards':contents=rewardsPage();break;default:contents=home();}const root=document.getElementById('app');root.classList.toggle('focus-letter',state.screen==='letterdetail');root.classList.toggle('focus-write',state.screen==='write');root.classList.toggle('focus-gallery',state.screen==='gallery');root.classList.toggle('focus-word',state.screen==='word');root.classList.toggle('focus-home',state.screen==='home');root.innerHTML=barevInlineImages(renderTop()+contents+nav()+(state.overlay?rewardModal():''));if(state.screen==='write')initCanvas()}
+function initCanvas(){const c=document.getElementById('draw');if(!c)return;
+const width=c.clientWidth,height=c.clientHeight,scale=Math.min(window.devicePixelRatio||1,3);
+c.width=Math.round(width*scale);c.height=Math.round(height*scale);
+const ctx=c.getContext('2d');ctx.scale(scale,scale);
+ctx.lineWidth=7;ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#e74283';
+let active=null;
+const at=e=>{const r=c.getBoundingClientRect();return{x:Math.max(0,Math.min(width,e.clientX-r.left)),y:Math.max(0,Math.min(height,e.clientY-r.top))}};
+c.onpointerdown=e=>{e.preventDefault();if(active!==null)return;active=e.pointerId;c.setPointerCapture(e.pointerId);const p=at(e);ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(p.x+0.01,p.y+0.01);ctx.stroke()};
+c.onpointermove=e=>{if(active!==e.pointerId)return;e.preventDefault();const p=at(e);ctx.lineTo(p.x,p.y);ctx.stroke()};
+const stop=e=>{if(active===e.pointerId){active=null;ctx.closePath()}};
+c.onpointerup=stop;c.onpointercancel=stop;
+}
+document.addEventListener('click',event=>{const el=event.target.closest('[data-do]');if(!el)return;const action=el.dataset.do,i=Number(el.dataset.i);switch(action){case 'hero':state.hero=el.dataset.hero;persist();render();break;case 'choose':go('choose');break;case 'home':go('home');break;case 'topics':go('topics');break;case 'alphabet':go('alphabet');break;case 'rewards':go('rewards');break;case 'topic':state.lesson=i;go('gallery');break;case 'gallery':go('gallery');break;case 'card':state.word=i;go('word');break;case 'startlesson':state.word=0;state.quiz=0;go('word');break;case 'nextword':if(state.word<LESSONS[state.lesson][2].length-1){state.word++;render();scrollToTop()}else{state.quiz=0;state.selected=-1;go('quiz')}break;case 'answer':if(state.selected===state.quiz)return;if(i===state.quiz){state.selected=i;state.wrong=false;const questionKey=state.lesson+':'+state.quiz;if(!state.reviewed.includes(questionKey)){state.reviewed.push(questionKey);state.stars+=5}persist()}else{state.selected=-1;state.wrong=true}render();break;case 'nextquiz':if(state.quiz>=LESSONS[state.lesson][2].length-1){completion()}else{state.quiz++;state.wrong=false;state.selected=-1;render();scrollToTop()}break;case 'letter':state.letter=i;go('letterdetail');break;case 'nextalphabet':state.letter=(state.letter+1)%LETTERS.length;go('letterdetail');break;case 'write':go('write');break;case 'clear':{const c=document.getElementById('draw');if(c){const ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height)}break;}case 'nextletter':if(!state.lettersDone.includes(state.letter)){state.lettersDone.push(state.letter);persist()}if(state.letter<LETTERS.length-1){state.letter++;render();scrollToTop()}else go('alphabet');break;case 'openchest':state.rewardStage='open';render();break;case 'reveal':state.rewardStage='reveal';render();break;case 'collect':if(!state.rewards.includes(state.overlay.lesson)){state.rewards.push(state.overlay.lesson);persist()}state.overlay=null;go('rewards');break;case 'continue':if(!state.rewards.includes(state.overlay.lesson)){state.rewards.push(state.overlay.lesson);persist()}state.overlay=null;go('topics');break;}});
+try{render()}catch(e){document.getElementById("app").innerHTML="<div style='background:#fff;border-radius:25px;padding:25px;margin:30px 10px;color:#74305e'><h2>Барев Kids</h2><p>Не удалось открыть экран. Обновите страницу.</p></div>";console.error(e)}</script></body></html>

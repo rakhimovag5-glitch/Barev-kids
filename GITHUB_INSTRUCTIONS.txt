@@ -1,0 +1,15 @@
+БАРЕВ KIDS — GitHub Pages
+
+В архиве находится готовый сайт. Важно: на GitHub нужно загружать РАСПАКОВАННЫЕ файлы, а не сам ZIP.
+
+Самый удобный способ для MacBook — GitHub Desktop:
+1. Создайте бесплатный аккаунт на github.com (если ещё нет).
+2. Установите GitHub Desktop: https://desktop.github.com/
+3. В программе File > New repository. Назовите barev-kids, выберите папку на Mac и Create Repository.
+4. В Finder откройте папку репозитория через Repository > Show in Finder.
+5. Распакуйте этот ZIP и перенесите ВСЕ его файлы и папку assets прямо в папку репозитория (index.html должен лежать в корне).
+6. В GitHub Desktop укажите Summary: Add Barev Kids app, нажмите Commit to main, затем Publish repository. Снимите галочку Keep this code private (GitHub Pages на бесплатном тарифе нужен публичный репозиторий).
+7. На github.com откройте репозиторий barev-kids, выберите Settings > Pages > Source: Deploy from a branch > Branch: main > /(root) > Save.
+8. Адрес будет https://ВАШ-ЛОГИН.github.io/barev-kids/
+
+Примечание: старая ссылка Netlify останется отдельно, GitHub Pages не переносит автоматически локальные звёзды и прогресс с прежнего адреса.
